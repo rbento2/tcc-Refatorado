@@ -1,0 +1,83 @@
+/*login*/
+.container-login{
+margin:20px auto;
+padding: 20px;
+text-align: center;
+width: 40%;
+}
+
+.container-login > .input-login{
+    margin: 5px 0;
+}
+
+.container-login > .btn.-submit{
+    border-radius: 8px;
+    height: 30px;
+    width: 100px;
+}
+/*fim login*/
+
+/*menu*/
+.navbar{
+    position: relative;
+    width: 100%;
+    text-align: right;
+}
+.navbar > .group-itens{
+    list-style: none;
+    
+}
+.navbar > .group-itens > li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu-group{
+    display: flex;
+}
+.menu-group > .foto-prato{
+    background: red;
+    flex: 1;
+}
+.menu-group > .prato-menu{
+    flex: 1;
+    text-align: right;
+}
+.menu-group > .prato-menu > .titulo{
+    text-align: center;
+}
+.menu-group > .prato-menu > ul {
+    list-style: none;
+}
+
+.menu-group > .prato-menu > ul > li {
+    padding: 3px;
+}
+/*fim menu*/
+
+@media screen and (max-width: 720px) {
+    /*login*/
+    .container-login{
+        margin: auto;
+        width: 80%;
+    }
+    /*fim login*/
+
+    /*menu*/
+    .menu-group{
+        display: block;
+        position: relative;
+    }
+    .menu-group > .foto-prato {
+        background: red;
+        content: '';
+        height: 250px;
+        width: 100%;
+    }
+    .menu-group > .prato-menu{
+        text-align: left;
+    }
+
+    /*fim menu*/
+
+}
